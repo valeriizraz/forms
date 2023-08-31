@@ -1,0 +1,288 @@
+.wrapper-wrapper {
+  overflow-y: auto;
+  color: #6E6893;
+}
+
+.wrapper-form-product {
+  max-width: 792px;
+  padding: 32px 106px 39px;
+  margin: 0 auto;
+  
+  position: relative;
+
+  background-color: #F2F0F9;
+}
+
+.button-product-form-exit {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+
+  width: 20px;
+  height: 20px;
+
+  background-image: url(../images/icons_product/exit.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.form-modal__container-title {
+  padding-bottom: 21px;
+  margin-bottom: 21px;
+
+  border-bottom: 1px solid #C6C2DE;
+}
+
+.form-modal__title {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+}
+
+.form-modal {
+  padding: 28px;
+
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+}
+
+.form-modal__form {
+  padding-bottom: 28px;
+  margin-bottom: 28px;
+}
+
+.form-modal__container-grid {
+  margin-bottom: 39px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 250px);
+  grid-template-rows: repeat(4, 60px);
+  gap: 12px 24px;
+}
+
+.form-modal__box-input-name {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.form-modal__box-input-category {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.form-modal__box-input-units {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
+.form-modal__box-input-discount {
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+}
+
+.form-modal__box-input-description {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+}
+
+.form-modal__box-input-quantity {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+.form-modal__box-input-price {
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+}
+
+.form-modal__label {
+  padding-top: 5px;
+}
+
+.form-modal__input-padding-top-none {
+  padding-top: 0;
+}
+
+.form-modal__input-margin-top {
+  margin-top: 5px;
+}
+
+.form-modal__input {
+  width: 100%;
+  height: 40px;
+
+  border-radius: 6px;
+}
+
+.form-modal__box-input-discount {
+  display: flex;
+}
+
+.form-modal__label-inline-block {
+  display: inline-block;
+  padding-top: 0;
+  height: 40px;
+}
+
+.form-modal__label-width-small {
+  width: 200px;
+}
+
+.form-modal__text-discount {
+  margin-bottom: 5px;
+}
+
+.form-modal__input-discount-ok {
+  display: inline-block;
+  margin-right: 10px;
+  width: 40px;
+  padding: 0;
+
+  background-color: #F4F2FF;
+}
+
+input[type=checkbox] {
+  appearance:none;
+}
+
+input[type=checkbox]:visited {
+  content: '✓';
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+}
+
+.form-modal__textarea {
+  width: 250px;
+  height: 112px;
+  padding: 0;
+  resize: none;
+
+  border: none;
+  border-radius: 5px;
+  background-color: #F4F2FF;
+}
+
+.form-modal__container-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-modal__button-style {
+  text-transform: uppercase;
+
+  color: #fff;
+  background-color: #6D5BD0;
+  border: none;
+  border-radius: 6px;
+
+  font-weight: 600;
+}
+
+.form-modal__button {
+  width: 250px;
+  height: 39px;
+}
+
+.form-modal__product-bottom {
+  display: flex;
+  justify-content: space-around;
+}
+
+.form-modal__product-bottom-text {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.form-modal__product-bottom-text-price {
+  font-size: 18px;
+  font-weight: 700;
+
+  color: #6D5BD0;
+}
+
+.form-modal__product-bottom-button {
+  width: 200px;
+  height: 39px;
+}
+
+@media (max-width: 800px) {
+  
+  .wrapper-form-product {
+    padding: 32px 20px 39px;
+  }
+
+  .button-product-form-exit {
+    top: 8px;
+    right: 30px;
+  }
+  
+  .form__title {
+    font-size: 20px;
+  }
+
+  .form-modal {
+    padding: 20px;
+  }
+
+  .form-modal__container-grid {
+    grid-template-columns: 250px;
+    grid-template-rows: repeat(8, 60px);
+    gap: 12px;
+
+    justify-content: center;
+  }
+  
+  .form-modal__box-input-name {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  
+  .form-modal__box-input-category {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+  
+  .form-modal__box-input-units {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+  
+  .form-modal__box-input-discount {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+  }
+  
+  .form-modal__box-input-description {
+    grid-column: 1 / 2;
+    grid-row: 5 / 7;
+  }
+  
+  .form-modal__box-input-quantity {
+    grid-column: 1 / 2;
+    grid-row: 7 / 8;
+  }
+  
+  .form-modal__box-input-price {
+    grid-column: 1 / 2;
+    grid-row: 8 / 9;
+  }
+
+  .form-product__bottom {
+    flex-wrap: wrap;
+  }
+
+  .form-product__bottom-text {
+    min-width: 250px;
+    padding-bottom: 10px;
+  }
+
+}
