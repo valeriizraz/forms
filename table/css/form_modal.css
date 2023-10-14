@@ -1,7 +1,37 @@
-.wrapper-wrapper {
-  overflow-y: auto;
+/* #wrapper {
+  position: relative;
+} */
+
+.form-overflow {
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-color: rgba(0, 0, 0, 0.6);
   color: #6E6893;
+
+  overflow-y: auto;
+  
+  /* transition: 3s ease-in-out; */
+  
 }
+
+.form-overflow-hidden {
+  opacity: 0;
+  visibility: visible;
+  z-index: -1;
+}
+
+/* .is-visible {
+  opacity: 1;
+  overflow: visible;
+  z-index: 1;
+} */
 
 .wrapper-form-product {
   max-width: 792px;
