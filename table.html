@@ -6,7 +6,14 @@
   <title>Table</title>
   <link rel="stylesheet" href="table/css/import.css">
 
-  <script defer src="js/crm.js"></script>
+  <script defer src="js/crm_table.js"></script>
+  <script defer src="js/crm_modal.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      START('#wrapper');
+    })
+  </script>
 </head>
 <body>
   
@@ -35,7 +42,7 @@
           <thead class="table__top">
             <tr class="table__top-row">
               <th class="table__top-cell table__top-cell_padding_left">ID</th>
-              <th class="table__top-cell">Наименование</th>
+              <th class="table__top-cell table__top-cell-name">Наименование</th>
               <th class="table__top-cell">Категория</th>
               <th class="table__top-cell">Ед/изм</th>
               <th class="table__top-cell">Количество</th>
@@ -46,178 +53,7 @@
             </tr>
           </thead>
 
-          <tbody class="table__body">
-            <tr class="table__body-row">
-              <td class="table__body-cell table__body-cell_padding_left">246016548</td>
-              <td class="table__body-cell">Навигационная система Soundmax</td>
-              <td class="table__body-cell">Техника для дома</td>
-              <td class="table__body-cell table__body-cell_color_gris">шт</td>
-              <td class="table__body-cell">5</td>
-              <td class="table__body-cell">$100</td>
-              <td class="table__body-cell">$500</td>
-              <td class="table__body-cell table__body-cell_padding_right">
-                <div class="table__body-cell-box-buttons-flex">
-                  <button class="table__body-button-image table__body-button-image-none"></button>
-                  <button class="table__body-button-groop"></button>
-                  <button class="table__body-button-delete"></button>
-                </div>
-              </td>
-            </tr>
-
-            <tr class="table__body-row">
-              <td class="table__body-cell table__body-cell_padding_left">937295527</td>
-              <td class="table__body-cell">Настольная игра “На 4-х ногах”</td>
-              <td class="table__body-cell">Настольные игры</td>
-              <td class="table__body-cell table__body-cell_color_gris">шт</td>
-              <td class="table__body-cell">12</td>
-              <td class="table__body-cell">$14</td>
-              <td class="table__body-cell">$168</td>
-              <td class="table__body-cell table__body-cell_padding_right">
-                  <div class="table__body-cell-box-buttons-flex">
-                    <button class="table__body-button-image"></button>
-                    <button class="table__body-button-groop"></button>
-                    <button class="table__body-button-delete"></button>
-                </div>
-              </td>
-            </tr>
-
-            <tr class="table__body-row">
-              <td class="table__body-cell table__body-cell_padding_left">246016548</td>
-              <td class="table__body-cell">Навигационная система Soundmax</td>
-              <td class="table__body-cell">Техника для дома</td>
-              <td class="table__body-cell table__body-cell_color_gris">шт</td>
-              <td class="table__body-cell">5</td>
-              <td class="table__body-cell">$100</td>
-              <td class="table__body-cell">$500</td>
-              <td class="table__body-cell table__body-cell_padding_right">
-                <div class="table__body-cell-box-buttons-flex">
-                  <button class="table__body-button-image  table__body-button-image-none"></button>
-                  <button class="table__body-button-groop"></button>
-                  <button class="table__body-button-delete"></button>
-                </div>
-              </td>
-            </tr>
-
-            <tr class="table__body-row">
-              <td class="table__body-cell table__body-cell_padding_left">246016548</td>
-              <td class="table__body-cell">Навигационная система Soundmax</td>
-              <td class="table__body-cell">Техника для дома</td>
-              <td class="table__body-cell table__body-cell_color_gris">шт</td>
-              <td class="table__body-cell">5</td>
-              <td class="table__body-cell">$100</td>
-              <td class="table__body-cell">$500</td>
-              <td class="table__body-cell table__body-cell_padding_right">
-                <div class="table__body-cell-box-buttons-flex">
-                  <button class="table__body-button-image table__body-button-image-none"></button>
-                  <button class="table__body-button-groop"></button>
-                  <button class="table__body-button-delete"></button>
-                </div>
-              </td>
-            </tr>
-
-            <tr class="table__body-row">
-              <td class="table__body-cell table__body-cell_padding_left">246016548</td>
-              <td class="table__body-cell">Навигационная система Soundmax</td>
-              <td class="table__body-cell">Техника для дома</td>
-              <td class="table__body-cell table__body-cell_color_gris">шт</td>
-              <td class="table__body-cell">5</td>
-              <td class="table__body-cell">$100</td>
-              <td class="table__body-cell">$500</td>
-              <td class="table__body-cell table__body-cell_padding_right">
-                <div class="table__body-cell-box-buttons-flex">
-                  <button class="table__body-button-image"></button>
-                  <button class="table__body-button-groop"></button>
-                  <button class="table__body-button-delete"></button>
-                </div>
-              </td>
-            </tr>
-
-            <tr class="table__body-row">
-              <td class="table__body-cell table__body-cell_padding_left">246016548</td>
-              <td class="table__body-cell">Навигационная система Soundmax</td>
-              <td class="table__body-cell">Техника для дома</td>
-              <td class="table__body-cell table__body-cell_color_gris">шт</td>
-              <td class="table__body-cell">5</td>
-              <td class="table__body-cell">$100</td>
-              <td class="table__body-cell">$500</td>
-              <td class="table__body-cell table__body-cell_padding_right">
-                <div class="table__body-cell-box-buttons-flex">
-                  <button class="table__body-button-image"></button>
-                  <button class="table__body-button-groop"></button>
-                  <button class="table__body-button-delete"></button>
-                </div>
-              </td>
-            </tr>
-
-            <tr class="table__body-row">
-              <td class="table__body-cell table__body-cell_padding_left">246016548</td>
-              <td class="table__body-cell">Навигационная система Soundmax</td>
-              <td class="table__body-cell">Техника для дома</td>
-              <td class="table__body-cell table__body-cell_color_gris">шт</td>
-              <td class="table__body-cell">5</td>
-              <td class="table__body-cell">$100</td>
-              <td class="table__body-cell">$500</td>
-              <td class="table__body-cell table__body-cell_padding_right">
-                <div class="table__body-cell-box-buttons-flex">
-                  <button class="table__body-button-image"></button>
-                  <button class="table__body-button-groop"></button>
-                  <button class="table__body-button-delete"></button>
-                </div>
-              </td>
-            </tr>
-
-            <tr class="table__body-row">
-              <td class="table__body-cell table__body-cell_padding_left">246016548</td>
-              <td class="table__body-cell">Навигационная система Soundmax</td>
-              <td class="table__body-cell">Техника для дома</td>
-              <td class="table__body-cell table__body-cell_color_gris">шт</td>
-              <td class="table__body-cell">5</td>
-              <td class="table__body-cell">$100</td>
-              <td class="table__body-cell">$500</td>
-              <td class="table__body-cell table__body-cell_padding_right">
-                <div class="table__body-cell-box-buttons-flex">
-                  <button class="table__body-button-image table__body-button-image-none"></button>
-                  <button class="table__body-button-groop"></button>
-                  <button class="table__body-button-delete"></button>
-                </div>  
-              </td>
-            </tr>
-
-            <tr class="table__body-row">
-              <td class="table__body-cell table__body-cell_padding_left">246016548</td>
-              <td class="table__body-cell">Навигационная система Soundmax</td>
-              <td class="table__body-cell">Техника для дома</td>
-              <td class="table__body-cell table__body-cell_color_gris">шт</td>
-              <td class="table__body-cell">5</td>
-              <td class="table__body-cell">$100</td>
-              <td class="table__body-cell">$500</td>
-              <td class="table__body-cell table__body-cell_padding_right">
-                <div class="table__body-cell-box-buttons-flex">
-                  <button class="table__body-button-image"></button>
-                  <button class="table__body-button-groop"></button>
-                  <button class="table__body-button-delete"></button>
-                </div>  
-              </td>
-            </tr>
-
-            <tr class="table__body-row">
-              <td class="table__body-cell table__body-cell_padding_left">246016548</td>
-              <td class="table__body-cell">Навигационная система Soundmax</td>
-              <td class="table__body-cell">Техника для дома</td>
-              <td class="table__body-cell table__body-cell_color_gris">шт</td>
-              <td class="table__body-cell">5</td>
-              <td class="table__body-cell">$100</td>
-              <td class="table__body-cell">$500</td>
-              <td class="table__body-cell table__body-cell_padding_right">
-                <div class="table__body-cell-box-buttons-flex">
-                  <button class="table__body-button-image table__body-button-image-none"></button>
-                  <button class="table__body-button-groop"></button>
-                  <button class="table__body-button-delete"></button>
-                </div>  
-              </td>
-            </tr>
-
-          </tbody>
+          <tbody class="table__body"></tbody>
 
           <tfoot class="table__footer">
             <tr class="table__footer-row">
@@ -253,9 +89,9 @@
         <div class="form-modal__container-title">
           <h2 class="form-modal__title">Добавить товар</h2>
           <!-- <p class="form__product-text-id"></p> -->
-        </div>    
+        </div> 
         
-        <form class="form-modal__form" action="#" method="post">
+        <form class="form-modal__form" action="#" method="post" id="add-product">
           <div class="form-modal__container-grid">
 
             <p class="form-modal__box-input form-modal__box-input-name">
@@ -296,25 +132,25 @@
 
             <p class="form-modal__box-input form-modal__box-input-quantity">Количество
               <label class="form-modal__label">
-                <input class="form-modal__input" type="text" name="quantity">
+                <input class="form-modal__input form-modal__input-amount" type="number" name="amount">
               </label>
             </p>
 
             <p class="form-modal__box-input form-modal__box-input-price">Цена
               <label class="form-modal__label">
-                <input class="form-modal__input form-modal__input-price" type="text" name="price">
+                <input class="form-modal__input form-modal__input-price" type="number" name="price">
               </label>
             </p>
           </div> 
 
           <div class="form-modal__container-button">
-            <button class="form-modal__button form-modal__button-style">Добавить изображение</button>
+            <button class="form-modal__button form-modal__button-style" type="button">Добавить изображение</button>
           </div>
         </form>
 
         <div class="form-modal__product-bottom">
-          <p class="form-modal__product-bottom-text">Итоговая стоимость: <span class="form-modal__product-bottom-text-price">$ 900.00</span></p>
-          <button class="form-modal__product-bottom-button form-modal__button-style">Добавить товар</button>
+          <p class="form-modal__product-bottom-text">Итоговая стоимость: <span class="form-modal__product-bottom-text-price"></span></p>
+          <button class="form-modal__product-bottom-button form-modal__button-style" type="submit" form="add-product">Добавить товар</button>
         </div>
         
       </section>

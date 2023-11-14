@@ -27,11 +27,11 @@
   z-index: -1;
 }
 
-/* .is-visible {
+.is-visible {
   opacity: 1;
   overflow: visible;
   z-index: 1;
-} */
+}
 
 .wrapper-form-product {
   max-width: 792px;
@@ -176,7 +176,27 @@
   width: 40px;
   padding: 0;
 
+  position: relative;
+
   background-color: #F4F2FF;
+}
+
+.form-modal__input-discount-text {
+  padding-left: 10px;
+}
+
+.discount-ok-img:after {
+  content: '';
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+
+  position: absolute;
+  top: 4px;
+  left: 4px;
+
+  background-image: url(../images/icons_product/ok.svg);
+  background-repeat: no-repeat;
 }
 
 input[type=checkbox] {

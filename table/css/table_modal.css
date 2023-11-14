@@ -164,13 +164,13 @@
   color: #6E6893;
 }
 
-.table__body-cell-box-buttons-flex {
+.btn-container {
   display: flex;
   justify-content: space-between;
   height: 100%;
 }
 
-.table__body-button-image {
+.btn {
   width: 20px;
   height: 20px;
   padding: 0;
@@ -179,7 +179,7 @@
   position: relative;
 }
 
-.table__body-button-image:after {
+.btn-img:after {
   content: '';
   display: inline-block;
   width: 20px;
@@ -196,6 +196,7 @@
 .table__body-button-image-none:after {
   background-image: url(../images/icons_table/clarity_picture-line.svg);
 }
+
 .table__body-button-groop {
   width: 22px;
   height: 22px;
@@ -205,7 +206,7 @@
   position: relative;
 }
 
-.table__body-button-groop:after {
+.btn-edit:after {
   content: '';
   display: inline-block;
   width: 20px;
@@ -228,7 +229,7 @@
   position: relative;
 }
 
-.table__body-button-delete:after {
+.btn-del:after {
   content: '';
   display: inline-block;
   width: 20px;
