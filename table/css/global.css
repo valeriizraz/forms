@@ -52,6 +52,10 @@ h1, h2, h3, p, figure, fieldset {
   margin: 0;
 }
 
+textarea {
+  padding: 10px;
+}
+
 input {
   padding: 0;
   border: none;

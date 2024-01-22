@@ -6,8 +6,7 @@
   <title>Table</title>
   <link rel="stylesheet" href="table/css/import.css">
 
-  <script defer src="js/crm_table.js"></script>
-  <script defer src="js/crm_modal.js"></script>
+  <script type="module" src="./js/table.js"></script>
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -23,7 +22,7 @@
       <section class="table-box">
         <div class="table-box__title-box">
           <h2 class="table-box__title">CMS</h2>
-          <p class="table-box__description">Итоговая стоимость: <span class="table-box__description-price">$900.00</span></p>
+          <p class="table-box__description">Итоговая стоимость: <span class="table-box__description-price"></span></p>
         </div>
 
         <div class="table-box__menu table-menu">
@@ -96,13 +95,13 @@
 
             <p class="form-modal__box-input form-modal__box-input-name">
               <label class="form-modal__label form-modal__input-padding-top-none">Наименование
-                <input class="form-modal__input form-modal__input-margin-top" type="text" name="name">
+                <input class="form-modal__input form-modal__input-margin-top" type="text" name="productName">
               </label>
             </p>
 
             <p class="form-modal__box-input form-modal__box-input-category">
               <label class="form-modal__label form-modal__input-padding-top-none">Категория
-                <input class="form-modal__input form-modal__input-margin-top" type="text" name="category">
+                <input class="form-modal__input form-modal__input-margin-top" type="text" name="productCategory">
               </label>
             </p>
 
@@ -118,8 +117,8 @@
                 <label class="form-modal__label form-modal__label-inline-block">
                   <input class="form-modal__input form-modal__input-discount-ok" type="checkbox" name="discount-ok" value="yes">
                 </label>
-                <label class="form-modal__label form-modal__label-inline-block form-modal__label-width-small">  
-                  <input class="form-modal__input form-modal__input-discount-text" type="text" name="discount-text">
+                <label class="form-modal__label form-modal__label-inline-block form-modal__label-width-small">
+                  <input class="form-modal__input form-modal__input-discount-text" type="text" name="discount-text" disabled>
                 </label>
               </div>
             </div>
